@@ -35,6 +35,7 @@ format = "[$user]($style)"
 disabled = false
 ssh_only = false
 trim_at = "."
+ssh_symbol = ""
 format = "[$ssh_symbol$hostname]($style) "
 
 [character]
