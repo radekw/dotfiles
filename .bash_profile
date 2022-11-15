@@ -14,3 +14,5 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="history"
 export HISTTIMEFORMAT="[%F %T] "
 
+source ~/.bash_key_bindings
+source ~/.bash_aliases

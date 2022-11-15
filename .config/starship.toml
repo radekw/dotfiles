@@ -66,7 +66,7 @@ style = "bright-black"
 disabled = false
 
 [aws]
-disabled = false
+disabled = true
 format = '[$symbol($profile )(\($region\) )(\[$duration\] )]($style)'
 style = "yellow"
 
@@ -82,7 +82,7 @@ style = "green"
 format = "[$symbol$environment]($style) "
 
 [terraform]
-disabled = false
+disabled = true
 style = "105"
 format = "[$symbol$workspace]($style) "
 
