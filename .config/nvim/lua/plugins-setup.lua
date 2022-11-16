@@ -1,3 +1,4 @@
+-- auto install packer if not installed
 local ensure_packer = function()
   local fn = vim.fn
   local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
@@ -11,11 +12,30 @@ end
 
 local packer_bootstrap = ensure_packer()
 
+vim.cmd([[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost plugins-setup.lua source <afile> | PackerSync
+  augroup end
+]])
+
+-- import packer safely
+local status, packer = pcall(require, "packer")
+if not status then
+  return
+end
+
+-- add list of plugins to install
 return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
-  -- My plugins here
-  -- use 'foo1/bar1.nvim'
-  -- use 'foo2/bar2.nvim'
+
+  -- requirement for other plugins
+  --use('nvim-lua/plenary.nvim')
+
+  -- file explorer
+  use('nvim-tree/nvim-web-devicons')
+  use('nvim-tree/nvim-tree.lua')
+
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
