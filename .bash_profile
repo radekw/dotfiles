@@ -16,3 +16,6 @@ export HISTTIMEFORMAT="[%F %T] "
 
 source ~/.bash_key_bindings
 source ~/.bash_aliases
+
+eval "$(starship init bash)"
+

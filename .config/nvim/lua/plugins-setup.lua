@@ -30,12 +30,36 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- requirement for other plugins
-  --use('nvim-lua/plenary.nvim')
+  use('nvim-lua/plenary.nvim')
+
+  -- tmux & split window navigation
+  use("christoomey/vim-tmux-navigator")
+
+  -- maximizes and restores current window
+  use("szw/vim-maximizer")
 
   -- file explorer
   use('nvim-tree/nvim-web-devicons')
   use('nvim-tree/nvim-tree.lua')
 
+  -- nightfox
+  use("EdenEast/nightfox.nvim")
+
+  -- gitsigns
+  use("lewis6991/gitsigns.nvim")
+
+  -- lualine
+  use("nvim-lualine/lualine.nvim")
+
+  -- comment
+  use("numToStr/Comment.nvim")
+
+  -- notify
+  use("rcarriga/nvim-notify")
+
+  -- telescope
+  use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
+  use({ "nvim-telescope/telescope.nvim", branch = "0.1.x" }) -- fuzzy finder
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
