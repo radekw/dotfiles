@@ -32,9 +32,6 @@ return require('packer').startup(function(use)
   -- requirement for other plugins
   use('nvim-lua/plenary.nvim')
 
-  -- tmux & split window navigation
-  use("christoomey/vim-tmux-navigator")
-
   -- maximizes and restores current window
   use("szw/vim-maximizer")
 
