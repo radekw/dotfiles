@@ -20,8 +20,7 @@ vim.opt.hlsearch = true
 vim.opt.iskeyword:append("-")
 
 -- file formats
-vim.opt.fileformat=unix
-vim.opt.fileformats=unix,dos,mac
+vim.opt.fileformat = unix
 
 -- mouse
 vim.opt.mouse = a
