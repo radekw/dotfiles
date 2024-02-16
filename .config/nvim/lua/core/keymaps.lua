@@ -49,3 +49,7 @@ keymap.set("n", "<leader>gfc", "<cmd>Telescope git_bcommits<cr>") -- list git co
 keymap.set("n", "<leader>gb", "<cmd>Telescope git_branches<cr>") -- list git branches (use <cr> to checkout) ["gb" for git branch]
 keymap.set("n", "<leader>gs", "<cmd>Telescope git_status<cr>") -- list current changes per file with diff preview ["gs" for git status]
 
+-- telescope file browser
+keymap.set("n", "<leader>fn", "<cmd>Telescope file_browser<cr>") -- list current changes per file with diff preview ["gs" for git status]
+keymap.set("n", "<leader>fm", "<cmd>Telescope file_browser path=%:p:h select_buffer=true<cr>") -- list current changes per file with diff preview ["gs" for git status]
+

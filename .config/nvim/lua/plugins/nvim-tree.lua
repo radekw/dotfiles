@@ -13,8 +13,8 @@ vim.opt.termguicolors = true
 
 --setup with options
 require("nvim-tree").setup({
-  open_on_setup = true,
-  open_on_setup_file = true,
+  -- open_on_setup = true,
+  -- open_on_setup_file = true,
   sort_by = "case_sensitive",
 })
 
