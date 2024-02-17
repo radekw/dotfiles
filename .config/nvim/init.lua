@@ -1,8 +1,0 @@
-require("plugins-setup")
-require("core.options")
-require("core.keymaps")
-require("plugins.nvim-tree")
-require("plugins.nightfox")
-require("plugins.gitsigns")
-require("plugins.lualine")
-require("plugins.comment")
