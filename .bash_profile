@@ -1,3 +1,5 @@
+export PATH=~/.local/bin:$PATH
+
 export PS1='\u@\h:\w\$ '
 export CLICOLOR=1
 # http://geoff.greer.fm/lscolors/
@@ -18,4 +20,4 @@ source ~/.bash_key_bindings
 source ~/.bash_aliases
 
 eval "$(starship init bash)"
-
+eval "$(~/.local/bin/mise activate bash)"
