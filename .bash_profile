@@ -16,8 +16,11 @@ export HISTCONTROL=ignoreboth
 export HISTIGNORE="history"
 export HISTTIMEFORMAT="[%F %T] "
 
-source ~/.bash_key_bindings
-source ~/.bash_aliases
+source "${HOME}/.bash_key_bindings"
+source "${HOME}/.bash_aliases"
+
+eval "$(~/.local/bin/mise activate bash)"
+eval "$(~/.local/bin/mise hook-env -s bash)"
 
 eval "$(starship init bash)"
-eval "$(~/.local/bin/mise activate bash)"
+eval "$(zoxide init bash)"
