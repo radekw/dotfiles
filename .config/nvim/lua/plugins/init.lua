@@ -1,10 +1,8 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = "BufWritePre", -- uncomment for format on save
-    config = function()
-      require "configs.conform"
-    end,
+    event = 'BufWritePre', -- uncomment for format on save
+    opts = require "configs.conform",
   },
 
   {
@@ -15,6 +13,13 @@ return {
   {
     "hashivim/vim-terraform",
     ft = "terraform",
+  },
+
+  {
+    "neovim/nvim-lspconfig",
+    config = function()
+      require "configs.lspconfig"
+    end,
   },
 
   {
@@ -38,38 +43,4 @@ return {
       },
     },
   },
-
-  {
-    "neovim/nvim-lspconfig",
-    config = function()
-      require("nvchad.configs.lspconfig").defaults()
-      require "configs.lspconfig"
-    end,
-  },
-
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
-        "bash",
-        "dockerfile",
-        "go",
-        "hcl",
-        "helm",
-        "json",
-        "lua",
-        "make",
-        "ninja",
-        "python",
-        "rst",
-        "regex",
-        "terraform",
-        "toml",
-        "vimdoc",
-        "vim",
-        "yaml",
-      },
-    },
-  },
 }
-
