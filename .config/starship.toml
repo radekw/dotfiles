@@ -20,7 +20,6 @@ symbol = " "
 
 [directory]
 style = "blue"
-read_only = " "
 truncation_length = 4
 truncate_to_repo = false
 
