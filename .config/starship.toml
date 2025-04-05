@@ -8,12 +8,10 @@ $git_state\
 $git_status\
 $git_metrics\
 $kubernetes\
-$terraform\
-$conda\
 $helm\
 $aws\
 $fill\
-$cmd_duration $jobs $status $memory_usage $time\
+$cmd_duration $status\
 $line_break\
 $character"""
 
@@ -75,17 +73,6 @@ disabled = false
 style = "cyan"
 format = '[$symbol$context( \($namespace\))]($style) '
 
-[conda]
-disabled = false
-ignore_base = true
-style = "green"
-format = "[$symbol$environment]($style) "
-
-[terraform]
-disabled = true
-style = "105"
-format = "[$symbol$workspace]($style) "
-
 [helm]
 disabled = false
 style = "white"
@@ -107,7 +94,6 @@ format = "[$duration]($style)"
 [memory_usage]
 disabled = false
 threshold = 1
-symbol = " "
 format = "$symbol [${ram}]($style) "
 
 [time]
