@@ -1,5 +1,5 @@
 return {
-  model = "copilot:claude-3.7-sonnet",
+  model = "gpt-4.1",
   mappings = {
     complete = {
       insert = '<C-j>',
