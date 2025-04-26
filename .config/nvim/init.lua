@@ -8,6 +8,9 @@ vim.opt.relativenumber = true
 -- wrapping
 vim.opt.wrap = false
 
+-- completeopt
+vim.opt.completeopt = { "noinsert", "noselect", "popup" }
+
 -- searching
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
