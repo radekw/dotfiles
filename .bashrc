@@ -6,7 +6,7 @@ case $- in
 *) return ;;
 esac
 
-export PATH="${HOME}/.nix-profile/bin:${HOME}/.local/bin:~/bin:${PATH}"
+export PATH="${HOME}/bin:${HOME}/.local/bin:${HOME}/.nix-profile/bin:${HOME}/.npm-global/bin:${PATH}"
 export EDITOR=nvim
 export PS1='\u@\h:\w\$ '
 
