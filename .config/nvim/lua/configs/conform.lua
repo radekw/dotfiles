@@ -4,6 +4,8 @@ local options = {
     terraform = { "terraform_fmt" },
     tf = { "terraform_fmt" },
     ["terraform-vars"] = { "terraform_fmt" },
+    -- css = { "prettier" },
+    -- html = { "prettier" },
   },
 
   format_on_save = {
@@ -13,4 +15,4 @@ local options = {
   },
 }
 
-require("conform").setup(options)
+return options

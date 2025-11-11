@@ -8,6 +8,9 @@ vim.opt.relativenumber = true
 -- wrapping
 vim.opt.wrap = false
 
+-- completeopt
+vim.opt.completeopt = { "noinsert", "noselect", "popup" }
+
 -- searching
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -62,7 +65,7 @@ dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
 require "options"
-require "nvchad.autocmds"
+require "autocmds"
 
 vim.schedule(function()
   require "mappings"
