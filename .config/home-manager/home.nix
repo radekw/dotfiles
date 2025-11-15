@@ -24,6 +24,7 @@
     pkgs.ripgrep
     pkgs.fd
     pkgs.lazygit
+    pkgs.gh
     pkgs.eza
     pkgs.zoxide
     pkgs.starship
