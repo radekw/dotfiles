@@ -39,6 +39,7 @@
     pkgs.age
     pkgs.uv
     pkgs.ffmpeg
+    pkgs.nodejs_24
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
     # pkgs.hello
