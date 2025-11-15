@@ -10,21 +10,21 @@ return {
     end,
   },
 
-  {
-    "CopilotC-Nvim/CopilotChat.nvim",
-    lazy = false,
-    dependencies = {
-      { "github/copilot.vim" },
-      { "nvim-lua/plenary.nvim", branch = "master" },
-    },
-    build = "make tiktoken", -- Only on MacOS or Linux
-    opts = require "configs.copilot-chat"
-  },
+  -- {
+  --   "CopilotC-Nvim/CopilotChat.nvim",
+  --   lazy = false,
+  --   dependencies = {
+  --     { "github/copilot.vim" },
+  --     { "nvim-lua/plenary.nvim", branch = "master" },
+  --   },
+  --   build = "make tiktoken", -- Only on MacOS or Linux
+  --   opts = require "configs.copilot-chat"
+  -- },
 
   {
-    'MeanderingProgrammer/render-markdown.nvim',
-    ft = { 'markdown' },
-    dependencies = { 'nvim-treesitter/nvim-treesitter', 'nvim-tree/nvim-web-devicons' },
+    "MeanderingProgrammer/render-markdown.nvim",
+    ft = { "markdown" },
+    dependencies = { "nvim-treesitter/nvim-treesitter", "nvim-tree/nvim-web-devicons" },
     opts = {},
   },
 
